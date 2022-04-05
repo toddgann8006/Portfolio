@@ -7,7 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profilepic {
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+ }
+
+ .backgroundGray {
+   background-color: rgb(228, 238, 240);
+ }
+
+ .footerlink {
+  text-decoration: none !important;
 }
