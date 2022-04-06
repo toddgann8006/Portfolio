@@ -5,17 +5,20 @@ function About(props) {
         <div className='bg-dark pt-5 pb-5'>
             <div className="container pt-5 mb-5 mb-md-3 backgroundGray">
                 <div className='row pl-md-5 ml-md-5'>
-                    <div className='col-md-6'>
-                        <p className='h1 text-left pt-3'>About Me</p>
+                    <div className='col-md-5'>
+                        <p className='h1 text-left pt-3'><u>About Me</u></p>
                         <p className='mt-5 h4 text-left'>
                             I'm Todd Gann, a self-motivated, driven individual who is eagerly pursuing a long-time dream of working in web development.
                         </p>
+                        <p className='mt-5 h4 text-left'>
+                            I work primarily with React, React Native, Node, Express, and MongoDB.
+                        </p>
                         <p className='mt-5 mb-5 h4 text-left'>
-                            I work primarily with React, React Native, Node, Express, and MongoDB. When I'm not at work, I enjoy playing Pokemon Go, watching Marvel movies, spending time with my family, and helping the world's goofiest cat catch the elusive red dot.
+                            When I'm not at work, I enjoy playing Pokemon Go, watching Marvel movies, spending time with my family, and helping the world's goofiest cat catch the elusive red dot.
                         </p>
                     </div>
-                    <div className='col-md-6 mb-5 pt-2 d-flex align-items-center flex-column'>
-                        <p className='h1'>Training</p>
+                    <div className='col-md-5 mb-5 pt-2'>
+                        <p className='h1 text-left ml-md-3'><u>Training</u></p>
                         <ul className='mt-5 text-left'>
                             <li>
                                 <p>

@@ -20,3 +20,7 @@ body {
  .footerlink {
   text-decoration: none !important;
 }
+
+.borderRight {
+  border-right: 2px, solid, black;
+}
