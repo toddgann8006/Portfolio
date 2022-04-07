@@ -107,7 +107,7 @@ function Projects(props) {
                                     The Massage Knox mobile app is my first major project. It is a rewards app that keeps track of how many times a client has visited the massage business using the camera on the phone to scan a QR code. They earn a stamp with each visit. It also receives push notifications to let clients know about last minute openings.
                                 </CardText>
                                 <CardText>
-                                    I started it while in the Nucamp Bootcamp. I built the front end with React Native and the back end with Express.
+                                    I started it while in the NuCamp Bootcamp. I built the front end with React Native and the back end with Express.
                                     It was designed for and is currently being used by a local business. It is available on both of the mobile app stores.
                                 </CardText>
                                 <CardText>
@@ -143,12 +143,9 @@ function Projects(props) {
                                     <p className='h1'>NuCamp Mobile App</p>
                                 </CardTitle>
                                 <CardText>
-                                    The NuCamp mobile app was a class project we did together for four weeks while learning React Native. We worked on it throughout the week together then we had to do part of it as an assignment by ourselves each week.
+                                    The NuCamp mobile app is a project I worked on while learning React Native. This isn't available on the app stores. I took the screenshots from an emulator. There is a link to the code on github below.
                                 </CardText>
-                                <CardText>
-                                    This isn't available on the app stores. I took the screenshots from an emulator. There is a link to the code on github below.
-                                </CardText>
-                                <CardText>Link to code:</CardText>
+                                <CardText className='mt-auto'>Link to code:</CardText>
                                 <Button varient="secondary" href="https://github.com/toddgann8006/Nucamp-Mobile-App">Front End</Button>
                             </CardBody>
                         </Card>
@@ -162,7 +159,7 @@ function Projects(props) {
                                     <p className='h1'>Healing Touch Spa</p>
                                 </CardTitle>
                                 <CardText>
-                                    This is a spa website I designed while in the Nucamp Bootcamp. It was made using HTML and CSS. It is currently deployed on Netlify.
+                                    This is a spa website I designed while in the NuCamp Bootcamp. It was made using HTML and CSS. It is currently deployed on Netlify.
                                 </CardText>
                                 <CardText>
                                     Links:
@@ -181,7 +178,7 @@ function Projects(props) {
                                     <p className='h1'>Nucamp Web App</p>
                                 </CardTitle>
                                 <CardText>
-                                    The NuCamp web app was a class project we did together for five weeks while learning React. Like with the mobile app, we worked on it throughout the week together then we had to do part of it as an assignment by ourselves each week. It is not currently deployed, but there is a link to the code below.
+                                    The NuCamp web app is a project I worked on while learning React. It is not currently deployed, but there is a link to the code below.
                                 </CardText>
                                 <CardText>
                                     Link to code:

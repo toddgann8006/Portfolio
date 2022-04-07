@@ -11,7 +11,7 @@ function About(props) {
                             I'm Todd Gann, a self-motivated, driven individual who is eagerly pursuing a long-time dream of working in web development.
                         </p>
                         <p className='mt-5 h4 text-left'>
-                            I work primarily with React, React Native, Node, Express, and MongoDB.
+                            I work primarily with React, React Native, NodeJS, Express, and MongoDB.
                         </p>
                         <p className='mt-5 mb-5 h4 text-left'>
                             When I'm not at work, I enjoy playing Pokemon Go, watching Marvel movies, spending time with my family, and helping the world's goofiest cat catch the elusive red dot.
@@ -39,7 +39,7 @@ function About(props) {
                                     Febuary 2021 - May 2021
                                 </p>
                                 <p>
-                                    Full Stack Bootcamp working HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, and MongoDB.
+                                    Full Stack Bootcamp working with HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, and MongoDB.
                                 </p>
                             </li>
                         </ul>

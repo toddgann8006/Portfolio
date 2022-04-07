@@ -28,19 +28,23 @@ function Contact(props) {
     };
 
     const handleNameInputChange = (event) => {
-        setName(event.target.value);
-        if (name.length >= 2) {
+        const nameCheckRegex = /^([a-z]{2,})$/
+        const name = event.target.value
+        setName(name);
+        if (nameCheckRegex.test(name)) {
             setValidName(true);
             setNameError("");
         } else {
             setValidName(false);
-            setNameError("Name must be at least 2 characters.")
+            setNameError("Please enter a name.")
         }
     };
 
     const handleMessageInputChange = (event) => {
-        setMessage(event.target.value);
-        if (message.length > 15) {
+        const messageCheckRegex = /^([a-z]{10,})$/
+        const message = event.target.value
+        setMessage(message);
+        if (messageCheckRegex.test(message)) {
             setValidMessage(true);
             setMessageError("")
         } else {
@@ -49,12 +53,15 @@ function Contact(props) {
         }
     };
 
-    const sendMessage = () => {
+    const sendMessage = (e) => {
+        e.preventDefault();
+
         const templateParams = {
-            from_name: name + " (" + email + ")",
-            to_name: "toddgann8006@comcast.net",
+            from_name: name,
+            to_name: email,
             message: message
         };
+
         emailjs.send("service_9zbh1pe", "template_wjwr0pk", templateParams, 'x2RG_9g3Z1L02zFZ9')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -64,13 +71,18 @@ function Contact(props) {
         setName("");
         setEmail("");
         setMessage("");
-    }
+        setValidEmail(false);
+        setValidMessage(false);
+        setValidName(false);
+    };
+
+    const isValid = validEmail && validName && validMessage
 
     return (
         <div className='bg-dark'>
             <div className='container pb-5 pt-5'>
                 <div className='row mt-3 backgroundGray'>
-                    <div className='col-12 mb-5 d-flex justify-content-center'>
+                    <div className='col-12 pt-3 mb-3 d-flex justify-content-center'>
                         <h1>Contact Me</h1>
                     </div>
                     <div className='col-12 d-flex justify-content-center'>
@@ -111,7 +123,7 @@ function Contact(props) {
                             </FormGroup>
                             <FormGroup row>
                                 <Col>
-                                    <Button disabled={!validEmail} type="submit" onClick={sendMessage} color="secondary">
+                                    <Button disabled={!isValid} type="submit" onClick={sendMessage} color="secondary">
                                         Submit
                                     </Button>
                                 </Col>
