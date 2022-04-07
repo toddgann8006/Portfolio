@@ -9,6 +9,8 @@ import home from '../images/Home.png';
 import login from '../images/Login.png';
 import menu from '../images/Menu.png';
 import reserve from '../images/Reserve.png';
+import spaapp from '../images/spaapp.png';
+import nucamp from '../images/nucampreact.png';
 
 function Projects(props) {
 
@@ -148,6 +150,43 @@ function Projects(props) {
                                 </CardText>
                                 <CardText>Link to code:</CardText>
                                 <Button varient="secondary" href="https://github.com/toddgann8006/Nucamp-Mobile-App">Front End</Button>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className='col-lg-6 pb-5 backgroundGray d-flex justify-content-center'>
+                        <Card style={{ width: '28rem' }}>
+                            <CardImg src={spaapp} alt='spa app home screen'
+                                top width="100%" />
+                            <CardBody style={{ backgroundColor: 'rgb(200, 220, 210)' }}>
+                                <CardTitle>
+                                    <p className='h1'>Healing Touch Spa</p>
+                                </CardTitle>
+                                <CardText>
+                                    This is a spa website I designed while in the Nucamp Bootcamp. It was made using HTML and CSS. It is currently deployed on Netlify.
+                                </CardText>
+                                <CardText>
+                                    Links:
+                                </CardText>
+                                <Button className="mr-5" varient="secondary" href="https://github.com/toddgann8006/Bootstrap-Spa-Project">Link To Code</Button>
+                                <Button className="ml-5" varient="secondary" href="https://healingtouch.netlify.app/">Live Site</Button>
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <div className='col-lg-6 pb-5 backgroundGray d-flex justify-content-center'>
+                        <Card style={{ width: '28rem' }}>
+                            <CardImg src={nucamp} alt='nucamp react app home screen'
+                                top width="100%" />
+                            <CardBody style={{ backgroundColor: 'rgb(200, 220, 210)' }}>
+                                <CardTitle>
+                                    <p className='h1'>Nucamp Web App</p>
+                                </CardTitle>
+                                <CardText>
+                                    The NuCamp web app was a class project we did together for five weeks while learning React. Like with the mobile app, we worked on it throughout the week together then we had to do part of it as an assignment by ourselves each week. It is not currently deployed, but there is a link to the code below.
+                                </CardText>
+                                <CardText>
+                                    Link to code:
+                                </CardText>
+                                <Button varient="secondary" href="https://github.com/toddgann8006/Nucamp-React-Project">Front End</Button>
                             </CardBody>
                         </Card>
                     </div>
