@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://toddgann8006.github.io/Portfolio",
+  "homepage": "https://toddgann8006.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -29,8 +29,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
